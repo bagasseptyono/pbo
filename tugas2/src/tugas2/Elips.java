@@ -8,18 +8,15 @@ package tugas2;
  *
  * @author Windows 10
  */
-public class Square {
-    public double sisi = 7;
+public class Elips {
+    public double phi = 3.14;
+    public double garisVertikal = 7;
+    public double garisHorizontal = 14;
     
     public double calculateArea(){
-        double area;
-        area = this.sisi * this.sisi;
-        return area;
+        return this.phi * this.garisHorizontal * this.garisVertikal;
     }
-    
     public double calculatePerimeter(){
-        double perimeter;
-        perimeter = sisi * 4;
-        return perimeter;
+        return this.phi * (this.garisHorizontal + this.garisVertikal);
     }
 }

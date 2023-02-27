@@ -8,18 +8,15 @@ package tugas2;
  *
  * @author Windows 10
  */
-public class Square {
-    public double sisi = 7;
+public class Rectangle {
+    public double lebar = 16;
+    public double panjang = 7;
     
     public double calculateArea(){
-        double area;
-        area = this.sisi * this.sisi;
-        return area;
+        return this.panjang * this.lebar;
+    }
+    public double calculatePerimeter(){
+        return (this.panjang+this.lebar)*2;
     }
     
-    public double calculatePerimeter(){
-        double perimeter;
-        perimeter = sisi * 4;
-        return perimeter;
-    }
 }
