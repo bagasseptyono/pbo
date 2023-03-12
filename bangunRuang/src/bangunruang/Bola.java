@@ -8,19 +8,19 @@ package bangunruang;
  *
  * @author Windows 10
  */
-public class Kubus {
-    public double sisi,volume;
-    public Kubus(){
-        this.sisi = 5;
+public class Bola {
+    public double radius, volume;
+    public Bola(){
+        this.radius = 7;
     }
-    public Kubus(float sisiBaru){
-        this.sisi = sisiBaru;
+    public Bola(double radius){
+        this.radius = radius;
     }
-    public void setSisi(float sisi){
-        this.sisi = sisi;
+    public void setRadius(double radius){
+        this.radius = radius;
     }
     private void computeAndSetVolume(){
-        this.volume = this.sisi *this.sisi *this.sisi;
+        this.volume = (4 * 3.14159 * this.radius * this.radius * this.radius) /3;
     }
     public double getVolume(){
         this.computeAndSetVolume();

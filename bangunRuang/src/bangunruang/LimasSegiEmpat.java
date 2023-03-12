@@ -8,29 +8,24 @@ package bangunruang;
  *
  * @author Windows 10
  */
-public class Balok {
-    public double panjang,lebar,tinggi, volume;
-    public Balok(){
-        this.lebar = 5;
-        this.panjang = 8;
+public class LimasSegiEmpat {
+    public double sisi, tinggi, volume;
+    public LimasSegiEmpat(){
+        this.sisi = 14;
         this.tinggi = 10;
     }
-    public Balok(int panjang, int lebar, int tinggi){
-        this.panjang = panjang;
-        this.lebar = lebar;
+    public LimasSegiEmpat(double sisi, double tinggi){
+        this.sisi = sisi;
         this.tinggi = tinggi;
     }
-    public void setPanjang(int panjang){
-        this.panjang=panjang;
+    public void setSisi(double sisi){
+        this.sisi = sisi;
     }
-    public void setLebar(int lebar){
-        this.lebar=lebar;
-    }
-    public void setTinggi(int tinggi){
+    public void setTinggi(double tinggi){
         this.tinggi = tinggi;
     }
     private void computeAndSetVolume(){
-        this.volume = this.panjang * this.lebar *this.tinggi;
+        this.volume =  (this.sisi * this.sisi * this.tinggi) /3;
     }
     public double getVolume(){
         this.computeAndSetVolume();
