@@ -15,7 +15,14 @@ public class UTSBAGAS {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-         Bus bus1 = new Bus();
+        
+        String Halte[] = {"Kantor", "Porong", "Surabaya", "Gresik"};
+        int jumlahTujuan[] = {0,0,0,0};
+        Bus bus1 = new Bus();
+        Halte[] halte  = new Halte[4];
+        for (int i = 0; i < halte.length; i++) {
+            halte[i] = new Halte("halo",5);
+        }
         int[] halte0 = {0,1,2,0};
         bus1.posisi(3, halte0);
         bus1.jalan();
