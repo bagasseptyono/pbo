@@ -3,23 +3,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package utsbagas;
-import java.util.Scanner;
 
 /**
  *
  * @author Windows 10
  */
-public class Halte {
-    public int penumpang;
+public final class Halte {
+    public int penumpangTunggu;
     public String namaHalte;
     public int [] tujuanPenumpang ;
-    public Halte(String namaHalte, int penumpang){
+    public int [] tujuanPenumpangNaik;
+    public int naik;
+    public int turun;
+    private int penumpangBis;
+    public Halte(String namaHalte,int penumpangTunggu, int[] tujuanPenumpang,int penumpangBis){
         this.namaHalte = namaHalte;
-        this.penumpang = penumpang;
+        this.penumpangBis = penumpangBis;
+        this.tujuanPenumpang = tujuanPenumpang;
+        this.penumpangTunggu = penumpangTunggu;
     }
-    public void setTujuanPenumpang(int[] tujuan){
-        for (int j = 0; j < this.tujuanPenumpang.length; j++) {
-            tujuanPenumpang[j] = tujuan[j];
-        }
-    }
+    
 }
